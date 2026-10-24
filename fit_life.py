@@ -5,10 +5,12 @@ WATER_RATIO = 0.03  # л/кг
 # user_name - имя пользователя
 print("Рады приветствовать вас в нашем приложении FitLife!")
 user_name = input("Как можно к вам обращаться? ")
+
 user_age = int(input(f"{user_name}, укажите, пожалуйста, ваш возраст: "))
 
 # 2. Сбор данных
 user_weight = float(input(f"{user_name}, укажите, пожалуйста, ваш вес, кг: "))
+
 user_height = float(input(f"{user_name}, укажите, пожалуйста, ваш рост, м: "))
 
 # 3. Логика расчетов
@@ -20,6 +22,6 @@ water_needed = user_weight * WATER_RATIO
 
 # 4. Вывод результата
 print(f"Уважаемый пользователь, {user_name}\n"
-      f"Ваш возраст: {user_age}. ИМТ равен {bmi:.1f)}.\n"
+      f"Ваш возраст: {user_age}. ИМТ равен {bmi:.1f}.\n"
       f"Рекомендуемая норма воды: {water_needed:.1f} л. в день\n"
       f"Расчет окончен. Будьте здоровы!")
